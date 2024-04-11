@@ -1,6 +1,8 @@
 package Selenium;
 
 import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,6 +15,7 @@ public class LaunchBrowser {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+		driver.findElement(By.xpath(""));
 		Thread.sleep(3000);
 		driver.close();
 
